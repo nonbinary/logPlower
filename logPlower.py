@@ -124,7 +124,6 @@ lineTime=time.localtime()
 # TODO: see if we can't make the lines skip/jumpable, so we can check n lines in advance, and double back if we've hit the window
 for logFile in logFiles:
     for line in logFile:
-        print lineTime
         # there's a couple of different time formats in logfiles
         # but all fields are space-separated, so we'll split the line
         splitLine = line.split(' ',5);
